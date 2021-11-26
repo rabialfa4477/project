@@ -7,7 +7,7 @@ let sender;
 if (url.searchParams.get('by') != null) {
   sender = url.searchParams.get('by');
 } else {
-  sender = "Alva";
+  sender = "....";
 }
 
 let footer = document.getElementById("credit");
@@ -15,7 +15,7 @@ footer.innerHTML = sender;
 footer.href = "https://www.instagram.com/avarby_/";
 
 document.querySelector(".tombol").addEventListener('click', function () {
-  Swal.fire("Hallo im Alva's program ", "I have Questions for you?", "question").then(function () {
+  Swal.fire("Hallo im ....'s program ", "I have Questions for you?", "question").then(function () {
     Swal.fire("Say the truth yeah!").then(function () {
       Swal.fire("Dont be lying okay!!", "", "error").then(function () {
 
@@ -45,7 +45,7 @@ document.querySelector(".tombol").addEventListener('click', function () {
             if (result.isConfirmed) {
               Swal.fire(`${sender} also like ${nama}`).then(function () {
                 Swal.fire({
-                  title: 'How old are you?',
+                  title: 'Btw How old are you?',
                   icon: 'question',
                   input: 'range',
                   inputLabel: 'Among 1 - 100 ya',
@@ -59,23 +59,23 @@ document.querySelector(".tombol").addEventListener('click', function () {
                   val = e.value
                   Swal.fire(`Ouhhhh ${nama} ${val}y.o now`).then(function () {
                     Swal.fire({
-                      title: `Now ${nama} Missed with ${sender}?`,
-                      showDenyButton: true,
+                      title: `${nama} Missed with ${sender}?`,
+                      showDenyButton: false,
                       showCancelButton: false,
                       confirmButtonText: `Miseed :)`,
                       denyButtonText: `No!`,
                     }).then((result) => {
                       /* Read more about isConfirmed, isDenied below */
                       if (result.isConfirmed) {
-                        Swal.fire(`Huhu yeah ${sender} also missed ${nama} :((`).then(function () {
+                        Swal.fire(`Huhu yeah ${sender} also missed with ${nama} :((`).then(function () {
                           Swal.fire('Last okay :)').then(function () {
-                            Swal.fire('Try yo click the Heart on the bellow pleasee :)')
+                            Swal.fire('Try to click the Heart on the bellow pleasee :)')
                           })
                         })
-                      } else if (result.isDenied) {
-                        Swal.fire('Owhhh that so sad :"( ', '', 'error').then(function () {
-                          Swal.fire('Okay bye!')
-                        })
+                      
+                        
+                          
+                        
                       }
                     })
                   })
@@ -113,7 +113,7 @@ document.querySelector('.hati').addEventListener('click', function () {
 // Otherwise the confetti constantly falls.
 var onlyOnKonami = false;
 
-function confetti() {
+function confetti() { 
   // Globals
   var $window = $(window),
     random = Math.random,
